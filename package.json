@@ -1,0 +1,17 @@
+{
+  "name": "anzen-kaizen-guide-master",
+  "version": "1.0.0",
+  "description": "書籍「レガシーフロントエンド安全改善ガイド」のサンプルコードから作成。 jQueryで書かれたTODOリストをVue.jsで書き直し、パッケージマネージャーとテストを導入する。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-puppeteer": "^5.0.3",
+    "puppeteer": "^9.1.1"
+  }
+}
