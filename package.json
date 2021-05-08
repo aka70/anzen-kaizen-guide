@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest spec/e2e.spec.ts visual.spec.ts",
     "test:all": "jest",
-    "lint": "eslint '**/*.js'"
+    "lint": "eslint '**/*.ts'"
   },
   "keywords": [],
   "author": "",
