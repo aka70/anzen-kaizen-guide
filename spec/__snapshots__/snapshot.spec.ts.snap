@@ -5,14 +5,25 @@ exports[`TODOアプリ タスクの入力 1`] = `
     <meta charset=\\"utf-8\\">
     <link rel=\\"stylesheet\\" href=\\"./css/style.css\\">
     <title>TODO</title>
-  </head>
+  <style>
+span[data-v-a5c1973e] {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL05leHRUb2RvLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBaUJBO0VBQ0EsaUJBQUE7RUFDQSxpQkFBQTtBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiPHRlbXBsYXRlPlxuICA8c3BhbiBpZD1cIm5leHRUb2RvXCI+5qyh44GuVE9ETzoge3tuZXh0VG9kb1RleHR9fTwvc3Bhbj5cbjwvdGVtcGxhdGU+XG5cbjxzY3JpcHQgbGFuZz1cInRzXCI+XG5pbXBvcnQgVnVlIGZyb20gXCJ2dWVcIjtcbmltcG9ydCBzdG9yZSBmcm9tIFwiLi9TdG9yZVwiO1xuZXhwb3J0IGRlZmF1bHQgVnVlLmV4dGVuZCh7XG4gIGNvbXB1dGVkOiB7XG4gICAgbmV4dFRvZG9UZXh0KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLm5leHRUb2RvVGV4dDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDEuMnJlbTtcbn1cbjwvc3R5bGU+Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>
+span[data-v-20403811] {
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL1RvZG9Db3VudC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQWlCQTtFQUNBLGdCQUFBO0FBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XG4gIDxzcGFuIGlkPVwidG9kb0NvdW50XCI+KOWFqHt7Y291bnR9feS7tik8L3NwYW4+XG48L3RlbXBsYXRlPlxuXG48c2NyaXB0IGxhbmc9XCJ0c1wiPlxuaW1wb3J0IFZ1ZSBmcm9tIFwidnVlXCI7XG5pbXBvcnQgc3RvcmUgZnJvbSBcIi4vU3RvcmVcIjtcbmV4cG9ydCBkZWZhdWx0IFZ1ZS5leHRlbmQoe1xuICBjb21wdXRlZDoge1xuICAgIGNvdW50KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLnRvZG9Db3VudDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtc2l6ZTogMC44ZW07XG59XG48L3N0eWxlPiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
   <body>
     <button id=\\"addTodo\\">タスクを追加する</button>
     <div id=\\"todoList\\" style=\\"\\"><div class=\\"todo\\"><input type=\\"text\\"><button class=\\"delete\\">削除</button></div><div class=\\"todo\\"><input type=\\"text\\"><button class=\\"delete\\">削除</button></div></div>
     <div id=\\"todoEmpty\\" style=\\"display: none;\\">タスクがありません</div>
     <div>
-      <span id=\\"nextTodo\\">次のTODO: サンプルタスク1</span>
-      <span id=\\"todoCount\\">(全2件)</span>
+      <span data-v-a5c1973e=\\"\\" id=\\"nextTodo\\">次のTODO: サンプルタスク1</span>
+      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全2件)</span>
     </div>
     <script src=\\"./dist/main.js\\"></script>
    
@@ -25,14 +36,25 @@ exports[`TODOアプリ タスクの削除 1`] = `
     <meta charset=\\"utf-8\\">
     <link rel=\\"stylesheet\\" href=\\"./css/style.css\\">
     <title>TODO</title>
-  </head>
+  <style>
+span[data-v-a5c1973e] {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL05leHRUb2RvLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBaUJBO0VBQ0EsaUJBQUE7RUFDQSxpQkFBQTtBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiPHRlbXBsYXRlPlxuICA8c3BhbiBpZD1cIm5leHRUb2RvXCI+5qyh44GuVE9ETzoge3tuZXh0VG9kb1RleHR9fTwvc3Bhbj5cbjwvdGVtcGxhdGU+XG5cbjxzY3JpcHQgbGFuZz1cInRzXCI+XG5pbXBvcnQgVnVlIGZyb20gXCJ2dWVcIjtcbmltcG9ydCBzdG9yZSBmcm9tIFwiLi9TdG9yZVwiO1xuZXhwb3J0IGRlZmF1bHQgVnVlLmV4dGVuZCh7XG4gIGNvbXB1dGVkOiB7XG4gICAgbmV4dFRvZG9UZXh0KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLm5leHRUb2RvVGV4dDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDEuMnJlbTtcbn1cbjwvc3R5bGU+Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>
+span[data-v-20403811] {
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL1RvZG9Db3VudC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQWlCQTtFQUNBLGdCQUFBO0FBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XG4gIDxzcGFuIGlkPVwidG9kb0NvdW50XCI+KOWFqHt7Y291bnR9feS7tik8L3NwYW4+XG48L3RlbXBsYXRlPlxuXG48c2NyaXB0IGxhbmc9XCJ0c1wiPlxuaW1wb3J0IFZ1ZSBmcm9tIFwidnVlXCI7XG5pbXBvcnQgc3RvcmUgZnJvbSBcIi4vU3RvcmVcIjtcbmV4cG9ydCBkZWZhdWx0IFZ1ZS5leHRlbmQoe1xuICBjb21wdXRlZDoge1xuICAgIGNvdW50KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLnRvZG9Db3VudDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtc2l6ZTogMC44ZW07XG59XG48L3N0eWxlPiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
   <body>
     <button id=\\"addTodo\\">タスクを追加する</button>
     <div id=\\"todoList\\" style=\\"display: none;\\"></div>
     <div id=\\"todoEmpty\\" style=\\"\\">タスクがありません</div>
     <div>
-      <span id=\\"nextTodo\\">次のTODO: (未登録)</span>
-      <span id=\\"todoCount\\">(全0件)</span>
+      <span data-v-a5c1973e=\\"\\" id=\\"nextTodo\\">次のTODO: (未登録)</span>
+      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全0件)</span>
     </div>
     <script src=\\"./dist/main.js\\"></script>
    
@@ -45,14 +67,25 @@ exports[`TODOアプリ タスクの追加 1`] = `
     <meta charset=\\"utf-8\\">
     <link rel=\\"stylesheet\\" href=\\"./css/style.css\\">
     <title>TODO</title>
-  </head>
+  <style>
+span[data-v-a5c1973e] {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL05leHRUb2RvLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBaUJBO0VBQ0EsaUJBQUE7RUFDQSxpQkFBQTtBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiPHRlbXBsYXRlPlxuICA8c3BhbiBpZD1cIm5leHRUb2RvXCI+5qyh44GuVE9ETzoge3tuZXh0VG9kb1RleHR9fTwvc3Bhbj5cbjwvdGVtcGxhdGU+XG5cbjxzY3JpcHQgbGFuZz1cInRzXCI+XG5pbXBvcnQgVnVlIGZyb20gXCJ2dWVcIjtcbmltcG9ydCBzdG9yZSBmcm9tIFwiLi9TdG9yZVwiO1xuZXhwb3J0IGRlZmF1bHQgVnVlLmV4dGVuZCh7XG4gIGNvbXB1dGVkOiB7XG4gICAgbmV4dFRvZG9UZXh0KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLm5leHRUb2RvVGV4dDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDEuMnJlbTtcbn1cbjwvc3R5bGU+Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>
+span[data-v-20403811] {
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL1RvZG9Db3VudC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQWlCQTtFQUNBLGdCQUFBO0FBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XG4gIDxzcGFuIGlkPVwidG9kb0NvdW50XCI+KOWFqHt7Y291bnR9feS7tik8L3NwYW4+XG48L3RlbXBsYXRlPlxuXG48c2NyaXB0IGxhbmc9XCJ0c1wiPlxuaW1wb3J0IFZ1ZSBmcm9tIFwidnVlXCI7XG5pbXBvcnQgc3RvcmUgZnJvbSBcIi4vU3RvcmVcIjtcbmV4cG9ydCBkZWZhdWx0IFZ1ZS5leHRlbmQoe1xuICBjb21wdXRlZDoge1xuICAgIGNvdW50KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLnRvZG9Db3VudDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtc2l6ZTogMC44ZW07XG59XG48L3N0eWxlPiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
   <body>
     <button id=\\"addTodo\\">タスクを追加する</button>
     <div id=\\"todoList\\" style=\\"\\"><div class=\\"todo\\"><input type=\\"text\\"><button class=\\"delete\\">削除</button></div><div class=\\"todo\\"><input type=\\"text\\"><button class=\\"delete\\">削除</button></div></div>
     <div id=\\"todoEmpty\\" style=\\"display: none;\\">タスクがありません</div>
     <div>
-      <span id=\\"nextTodo\\">次のTODO: </span>
-      <span id=\\"todoCount\\">(全2件)</span>
+      <span data-v-a5c1973e=\\"\\" id=\\"nextTodo\\">次のTODO: </span>
+      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全2件)</span>
     </div>
     <script src=\\"./dist/main.js\\"></script>
    
@@ -65,14 +98,25 @@ exports[`TODOアプリ 初期表示 1`] = `
     <meta charset=\\"utf-8\\">
     <link rel=\\"stylesheet\\" href=\\"./css/style.css\\">
     <title>TODO</title>
-  </head>
+  <style>
+span[data-v-a5c1973e] {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL05leHRUb2RvLnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBaUJBO0VBQ0EsaUJBQUE7RUFDQSxpQkFBQTtBQUNBIiwic291cmNlc0NvbnRlbnQiOlsiPHRlbXBsYXRlPlxuICA8c3BhbiBpZD1cIm5leHRUb2RvXCI+5qyh44GuVE9ETzoge3tuZXh0VG9kb1RleHR9fTwvc3Bhbj5cbjwvdGVtcGxhdGU+XG5cbjxzY3JpcHQgbGFuZz1cInRzXCI+XG5pbXBvcnQgVnVlIGZyb20gXCJ2dWVcIjtcbmltcG9ydCBzdG9yZSBmcm9tIFwiLi9TdG9yZVwiO1xuZXhwb3J0IGRlZmF1bHQgVnVlLmV4dGVuZCh7XG4gIGNvbXB1dGVkOiB7XG4gICAgbmV4dFRvZG9UZXh0KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLm5leHRUb2RvVGV4dDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDEuMnJlbTtcbn1cbjwvc3R5bGU+Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>
+span[data-v-20403811] {
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL1RvZG9Db3VudC52dWUiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQWlCQTtFQUNBLGdCQUFBO0FBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XG4gIDxzcGFuIGlkPVwidG9kb0NvdW50XCI+KOWFqHt7Y291bnR9feS7tik8L3NwYW4+XG48L3RlbXBsYXRlPlxuXG48c2NyaXB0IGxhbmc9XCJ0c1wiPlxuaW1wb3J0IFZ1ZSBmcm9tIFwidnVlXCI7XG5pbXBvcnQgc3RvcmUgZnJvbSBcIi4vU3RvcmVcIjtcbmV4cG9ydCBkZWZhdWx0IFZ1ZS5leHRlbmQoe1xuICBjb21wdXRlZDoge1xuICAgIGNvdW50KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLnRvZG9Db3VudDsgXG4gICAgfVxuICB9XG59KTtcbjwvc2NyaXB0PlxuXG48c3R5bGUgc2NvcGVkPlxuc3BhbiB7XG4gIGZvbnQtc2l6ZTogMC44ZW07XG59XG48L3N0eWxlPiJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
   <body>
     <button id=\\"addTodo\\">タスクを追加する</button>
     <div id=\\"todoList\\" style=\\"display: none;\\"></div>
     <div id=\\"todoEmpty\\">タスクがありません</div>
     <div>
-      <span id=\\"nextTodo\\">次のTODO: (未登録)</span>
-      <span id=\\"todoCount\\">(全0件)</span>
+      <span data-v-a5c1973e=\\"\\" id=\\"nextTodo\\">次のTODO: (未登録)</span>
+      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全0件)</span>
     </div>
     <script src=\\"./dist/main.js\\"></script>
    

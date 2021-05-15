@@ -4,10 +4,11 @@
 
 <script lang="ts">
 import Vue from "vue";
+import store from "./Store";
 export default Vue.extend({
   computed: {
     count() {
-      return 0; // dummy
+      return store.todoCount; 
     }
   }
 });

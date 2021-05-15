@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nspan[data-v-a5c1973e] {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n", "",{"version":3,"sources":["webpack://./js/NextTodo.vue"],"names":[],"mappings":";AAgBA;EACA,iBAAA;EACA,iBAAA;AACA","sourcesContent":["<template>\n  <span id=\"nextTodo\">次のTODO: {{nextTodoText}}</span>\n</template>\n\n<script lang=\"ts\">\nimport Vue from \"vue\";\nexport default Vue.extend({\n  computed: {\n    nextTodoText() {\n      return \"\"; // dummy\n    }\n  }\n});\n</script>\n\n<style scoped>\nspan {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n</style>"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nspan[data-v-a5c1973e] {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n", "",{"version":3,"sources":["webpack://./js/NextTodo.vue"],"names":[],"mappings":";AAiBA;EACA,iBAAA;EACA,iBAAA;AACA","sourcesContent":["<template>\n  <span id=\"nextTodo\">次のTODO: {{nextTodoText}}</span>\n</template>\n\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport store from \"./Store\";\nexport default Vue.extend({\n  computed: {\n    nextTodoText() {\n      return store.nextTodoText; \n    }\n  }\n});\n</script>\n\n<style scoped>\nspan {\n  font-weight: bold;\n  font-size: 1.2rem;\n}\n</style>"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -48,7 +48,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nspan[data-v-20403811] {\n  font-size: 0.8em;\n}\n", "",{"version":3,"sources":["webpack://./js/TodoCount.vue"],"names":[],"mappings":";AAgBA;EACA,gBAAA;AACA","sourcesContent":["<template>\n  <span id=\"todoCount\">(全{{count}}件)</span>\n</template>\n\n<script lang=\"ts\">\nimport Vue from \"vue\";\nexport default Vue.extend({\n  computed: {\n    count() {\n      return 0; // dummy\n    }\n  }\n});\n</script>\n\n<style scoped>\nspan {\n  font-size: 0.8em;\n}\n</style>"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nspan[data-v-20403811] {\n  font-size: 0.8em;\n}\n", "",{"version":3,"sources":["webpack://./js/TodoCount.vue"],"names":[],"mappings":";AAiBA;EACA,gBAAA;AACA","sourcesContent":["<template>\n  <span id=\"todoCount\">(全{{count}}件)</span>\n</template>\n\n<script lang=\"ts\">\nimport Vue from \"vue\";\nimport store from \"./Store\";\nexport default Vue.extend({\n  computed: {\n    count() {\n      return store.todoCount; \n    }\n  }\n});\n</script>\n\n<style scoped>\nspan {\n  font-size: 0.8em;\n}\n</style>"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11404,6 +11404,37 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./js/Store.ts":
+/*!*********************!*\
+  !*** ./js/Store.ts ***!
+  \*********************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+"use strict";
+
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.mutations = void 0;
+var vue_1 = __importDefault(__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js"));
+var store = vue_1.default.observable({
+    nextTodoText: "",
+    todoCount: 0
+});
+exports.mutations = {
+    updateNextTodoText: function (nextTodoText) {
+        store.nextTodoText = nextTodoText;
+    },
+    updateTodoCount: function (todoCount) {
+        store.todoCount = todoCount;
+    }
+};
+exports.default = store;
+
+
+/***/ }),
+
 /***/ "./js/mount.ts":
 /*!*********************!*\
   !*** ./js/mount.ts ***!
@@ -11466,9 +11497,12 @@ __webpack_require__(/*! ./mount */ "./js/mount.ts");
 var jquery_1 = __importDefault(__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"));
 var reader_1 = __webpack_require__(/*! ./reader */ "./js/reader.ts");
 var writer_1 = __webpack_require__(/*! ./writer */ "./js/writer.ts");
+var Store_1 = __webpack_require__(/*! ./Store */ "./js/Store.ts");
 /* eslint-disable func-names */
 function updateAll() {
     var _a = reader_1.readData(), count = _a.count, nextTodoText = _a.nextTodoText;
+    Store_1.mutations.updateNextTodoText(nextTodoText);
+    Store_1.mutations.updateTodoCount(Number(count));
     writer_1.toggleTodoList(count);
     writer_1.toggleTodoEmpty(count);
 }
@@ -11555,10 +11589,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var vue_1 = __importDefault(__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js"));
+var Store_1 = __importDefault(__webpack_require__(/*! ./Store */ "./js/Store.ts"));
 exports.default = vue_1.default.extend({
     computed: {
         nextTodoText: function () {
-            return ""; // dummy
+            return Store_1.default.nextTodoText;
         }
     }
 });
@@ -11579,10 +11614,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", ({ value: true }));
 var vue_1 = __importDefault(__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js"));
+var Store_1 = __importDefault(__webpack_require__(/*! ./Store */ "./js/Store.ts"));
 exports.default = vue_1.default.extend({
     computed: {
         count: function () {
-            return 0; // dummy
+            return Store_1.default.todoCount;
         }
     }
 });
