@@ -96,11 +96,11 @@ div[data-v-7b0b1d4f] {
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2pzL1RvZG9MaXN0LnZ1ZSJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBNkJBO0VBQ0Esa0JBQUE7RUFDQSx1QkFBQTtFQUNBLGdCQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtBQUNBO0FBQ0E7RUFDQSxVQUFBO0FBQ0EiLCJzb3VyY2VzQ29udGVudCI6WyI8dGVtcGxhdGU+XG4gIDxkaXYgaWQ9XCJ0b2RvTGlzdFwiIHYtc2hvdz1cInZpc2libGVcIj5cbiAgICA8ZGl2XG4gICAgICB2LWZvcj1cInRvZG8gaW4gdG9kb0xpc3RcIlxuICAgICAgOmtleT1cInRvZG8ua2V5XCJcbiAgICAgIGNsYXNzPVwidG9kb1wiXG4gICAgPlxuICAgICAgPGlucHV0IHR5cGU9XCJ0ZXh0XCIgLz5cbiAgICAgIDxidXR0b24gY2xhc3M9XCJkZWxldGVcIj7liYrpmaQ8L2J1dHRvbj5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG48L3RlbXBsYXRlPlxuXG48c2NyaXB0IGxhbmc9XCJ0c1wiPlxuaW1wb3J0IFZ1ZSBmcm9tIFwidnVlXCI7XG5pbXBvcnQgc3RvcmUgZnJvbSBcIi4vU3RvcmVcIjtcbmV4cG9ydCBkZWZhdWx0IFZ1ZS5leHRlbmQoe1xuICBjb21wdXRlZDoge1xuICAgIHZpc2libGUoKSB7XG4gICAgICByZXR1cm4gc3RvcmUudG9kb0NvdW50ID4gMDtcbiAgICB9LFxuICAgIHRvZG9MaXN0KCkge1xuICAgICAgcmV0dXJuIHN0b3JlLnRvZG9MaXN0O1xuICAgIH1cbiAgfVxufSk7XG48L3NjcmlwdD5cblxuPHN0eWxlIHNjb3BlZD5cbiN0b2RvTGlzdCB7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgYm9yZGVyOiAxcHggZGFzaGVkIGdyYXk7XG4gIG1hcmdpbjogMjBweCAwcHg7XG4gIHBhZGRpbmc6IDIwcHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgd2lkdGg6IDQwMHB4O1xufVxuLnRvZG8gaW5wdXQge1xuICB3aWR0aDogODAlO1xufVxuPC9zdHlsZT4iXSwic291cmNlUm9vdCI6IiJ9 */</style></head>
   <body>
     <button id=\\"addTodo\\">タスクを追加する</button>
-    <div data-v-4e956b0c=\\"\\" id=\\"todoList\\" style=\\"\\"></div>
-    <div data-v-7b0b1d4f=\\"\\" id=\\"todoEmpty\\" style=\\"display: none;\\">タスクがありません</div>
+    <div data-v-4e956b0c=\\"\\" id=\\"todoList\\" style=\\"display: none;\\"></div>
+    <div data-v-7b0b1d4f=\\"\\" id=\\"todoEmpty\\" style=\\"\\">タスクがありません</div>
     <div>
-      <span data-v-a5c1973e=\\"\\" id=\\"nextTodo\\">次のTODO: サンプルタスク2</span>
-      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全1件)</span>
+      <span data-v-a5c1973e=\\"\\" id=\\"nextTodo\\">次のTODO: (未登録)</span>
+      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全0件)</span>
     </div>
     <script src=\\"./dist/main.js\\"></script>
    
@@ -154,7 +154,7 @@ div[data-v-7b0b1d4f] {
     <div data-v-7b0b1d4f=\\"\\" id=\\"todoEmpty\\" style=\\"display: none;\\">タスクがありません</div>
     <div>
       <span data-v-a5c1973e=\\"\\" id=\\"nextTodo\\">次のTODO: </span>
-      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全1件)</span>
+      <span data-v-20403811=\\"\\" id=\\"todoCount\\">(全2件)</span>
     </div>
     <script src=\\"./dist/main.js\\"></script>
    
