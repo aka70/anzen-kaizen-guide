@@ -11625,15 +11625,12 @@ __webpack_require__(/*! ./mount */ "./js/mount.ts");
 var jquery_1 = __importDefault(__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"));
 var vue_1 = __importDefault(__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.runtime.esm.js"));
 var reader_1 = __webpack_require__(/*! ./reader */ "./js/reader.ts");
-var writer_1 = __webpack_require__(/*! ./writer */ "./js/writer.ts");
 var Store_1 = __webpack_require__(/*! ./Store */ "./js/Store.ts");
 /* eslint-disable func-names */
 function updateAll() {
     var _a = reader_1.readData(), count = _a.count, nextTodoText = _a.nextTodoText;
     Store_1.mutations.updateNextTodoText(nextTodoText);
     Store_1.mutations.updateTodoCount(Number(count));
-    writer_1.toggleTodoList(count);
-    writer_1.toggleTodoEmpty(count);
 }
 jquery_1.default(function () {
     jquery_1.default("#addTodo").on("click", function () {
@@ -11651,42 +11648,6 @@ jquery_1.default(function () {
     });
     updateAll();
 });
-
-
-/***/ }),
-
-/***/ "./js/writer.ts":
-/*!**********************!*\
-  !*** ./js/writer.ts ***!
-  \**********************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-"use strict";
-
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", ({ value: true }));
-exports.toggleTodoEmpty = exports.toggleTodoList = void 0;
-var jquery_1 = __importDefault(__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"));
-var toggleTodoList = function (count) {
-    if (count) {
-        jquery_1.default("#todoList").show();
-    }
-    else {
-        jquery_1.default("#todoList").hide();
-    }
-};
-exports.toggleTodoList = toggleTodoList;
-var toggleTodoEmpty = function (count) {
-    if (count) {
-        jquery_1.default("#todoEmpty").hide();
-    }
-    else {
-        jquery_1.default("#todoEmpty").show();
-    }
-};
-exports.toggleTodoEmpty = toggleTodoEmpty;
 
 
 /***/ }),
